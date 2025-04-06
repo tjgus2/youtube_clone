@@ -220,5 +220,54 @@ div.more {
 }
 
 /* commment_container */
+.commment_container {
+    margin: 36px;
+}
+.comment_count,
+.add_comment,
+.comment_icon,
+.reply {
+    display: flex;
+    align-items: center;
+}
 
+.comment_count > h2 {
+    font-size: 20px;
+    font-weight: 700;
+    margin-right: 24px;
+}
+
+.add_comment > figure {
+    background-image: url(/image/profile.jpg);
+    width: 40px;
+    height: 40px;
+    background-size: cover;
+    border-radius: 24px;
+}
+
+.add_comment_input > input {
+    margin: 16px;
+    width: 100%;
+    border: none;
+    border-bottom: 1px solid #ddd;
+}
+
+.comment_content {
+    margin: auto 36px;
+}
+
+.user_comment > h2 {
+    font-size: 18px;
+    font-weight: 500;
+    margin-bottom: 4px;
+}
+
+.reply > span {
+    color: #065Fd4;
+}
+
+.elipse_more {
+    display: flex;
+    justify-content: flex-end;
+}
 
