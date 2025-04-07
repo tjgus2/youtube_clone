@@ -81,7 +81,7 @@ header,
 }
 
 .profile_img > span {
-    margin-bottom: 2px;
+    margin-bottom: 4px;
     padding-right: 4px;
     font-size: 14px
 }
@@ -91,15 +91,25 @@ header,
     border: none;
 }
 
+/* all_section */
+.all_section {
+    display: flex;
+    gap: 24px;
+}
+
 /* main */
 /* main_left */
 .main_left { 
     width: 70%;
     margin-left: 24px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
 }
 
-.video_container { 
-    width: 100%;
+.video_container,
+.commment_container { 
+    width: 90%;
 }
 
 /* main_video */
@@ -220,54 +230,161 @@ div.more {
 }
 
 /* commment_container */
-.commment_container {
-    margin: 36px;
-}
-.comment_count,
-.add_comment,
-.comment_icon,
-.reply {
+.comment_count {
     display: flex;
     align-items: center;
+    margin: 16px 0;
+    gap: 16px;
 }
 
 .comment_count > h2 {
     font-size: 20px;
-    font-weight: 700;
-    margin-right: 24px;
+    font-weight: 600;
+}
+
+.comment_align {
+    display: flex;
+    align-items: center;
+}
+
+.comment_align > span {
+    font-size: 14px;
 }
 
 .add_comment > figure {
-    background-image: url(/image/profile.jpg);
+    background: url(/image/profile.jpg);
     width: 40px;
     height: 40px;
     background-size: cover;
-    border-radius: 24px;
+    border-radius: 50%;
+}
+
+.add_comment {
+    display: flex;
+}
+
+.add_comment_input {
+    border-bottom: 1px solid #ddd;
+    width: 100%;
+    margin: 0 0 16px 16px;
 }
 
 .add_comment_input > input {
-    margin: 16px;
-    width: 100%;
     border: none;
-    border-bottom: 1px solid #ddd;
+    outline: none;
 }
 
 .comment_content {
-    margin: auto 36px;
+    display: flex;
+    justify-content: space-between;
+    margin: 32px 0;
+}
+
+.comment_content > figure {
+    background: url(/image/unnamed.jpg);
+    width: 40px;
+    height: 40px;
+    background-size: cover;
+    border-radius: 50%;
+    margin-right: 16px;
+}
+
+.user_comment {
+    flex-basis: 100%;
 }
 
 .user_comment > h2 {
-    font-size: 18px;
-    font-weight: 500;
-    margin-bottom: 4px;
+    font-size: 14px;
+    font-weight: 600;
+    margin-bottom: 8px;
 }
 
-.reply > span {
+.user_comment > h2 > span {
+    font-size: 12px;
+    font-weight: 400;
+    color: #423939;
+}
+
+.comment_icon,
+.like {
+    display: flex;
+    align-items: center;
+}
+
+.like > span {
+    font-size: 14px;
+}
+
+.reply {
+    display: flex;
+    align-items: center;
     color: #065Fd4;
 }
 
-.elipse_more {
-    display: flex;
-    justify-content: flex-end;
+.reply > figure {
+    background: url(/image/unnamed.jpg);
+    width: 24px;
+    height: 24px;
+    background-size: cover;
+    border-radius: 50%;
+    margin-right: 8px;
 }
 
+.reply > button > svg {
+    fill: #065Fd4;
+}
+
+/* side_video_container */
+.side_video_container {
+    width: 30%;
+}
+
+.side_width {
+    width: 80%;
+}
+
+.side_video_filter {
+    display: flex;
+    gap: 8px;
+    margin: 16px 0;
+}
+
+.side_video_filter > li > button {
+    padding: 4px 8px;
+    background: #f1f1f1;
+    border: none;
+    font-size: 14px;
+    font-weight: 600;
+    border-radius: 6px;
+}
+
+.side_video_filter > li:first-child > button {
+    background-color: #000;
+    color: #f1f1f1;
+}
+
+.side_videos > li {
+    display: flex;
+    gap: 12px;
+    margin-bottom: 8px;
+}
+
+.side_videos > li > figure > a > img {
+    border-radius: 8px;
+    width: 168px;
+}
+
+.side_video_text > h2 {
+    font-size: 14px;
+}
+
+.side_video_text > p {
+    font-size: 13px;
+    color: #606060;
+    margin: 8px 0;
+}
+
+.sub_text {
+    font-size: 13px;
+    color: #606060;
+}
