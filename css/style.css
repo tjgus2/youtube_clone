@@ -153,7 +153,7 @@ header,
 }
 
 .channel_box > figure {
-    background-image: url(./image/profile.jpg);
+    background-image: url(../image/profile.jpg);
     width: 40px;
     height: 40px;
     border-radius: 50%;
@@ -252,7 +252,7 @@ div.more {
 }
 
 .add_comment > figure {
-    background: url(./image/profile.jpg);
+    background: url(../image/profile.jpg);
     width: 40px;
     height: 40px;
     background-size: cover;
@@ -281,7 +281,7 @@ div.more {
 }
 
 .comment_content > figure {
-    background: url(./image/unnamed.jpg);
+    background: url(../image/unnamed.jpg);
     width: 40px;
     height: 40px;
     background-size: cover;
@@ -322,7 +322,7 @@ div.more {
 }
 
 .reply > figure {
-    background: url(./image/unnamed.jpg);
+    background: url(../image/unnamed.jpg);
     width: 24px;
     height: 24px;
     background-size: cover;
